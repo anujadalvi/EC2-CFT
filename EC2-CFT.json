@@ -67,7 +67,14 @@
 					"service jenkins start\n",
 					"service jenkins enable\n",
 					"yum update -y\n",
-					"sudo easy_install pip \n"
+					"sudo easy_install pip \n",
+					"cd ~\n",
+					"mkdir /home/ec2-user/Lambda\n",
+					"cd /home/ec2-user/Lambda\n",
+					"pip install pymysql -t .\n",
+					"aws s3 cp s3://project-bucket-group4/lambda.py /home/ec2-user/Lambda\n",
+					"zip -r Lambda.zip .\n",
+					"aws s3 cp Lambda.zip s3://project-bucket-group4/\n"	
 					]
 					]
 					}
