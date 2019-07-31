@@ -69,8 +69,8 @@
 					"yum update -y\n",
 					"sudo easy_install pip \n",
 					"cd ~\n",
-					"mkdir /home/ec2-user/anuja\n",
-					"cd /home/ec2-user/anuja\n",
+					"mkdir /home/ec2-user/lambda\n",
+					"cd /home/ec2-user/lambda\n",
 					"pip install pymysql -t .\n",
 					"touch lambda.py\n"
 					]
